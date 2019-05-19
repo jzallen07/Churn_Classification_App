@@ -57,9 +57,8 @@ To run the web application follow steps:
 2. Run `build_model.py`
 ```$ python create_model.py ../mini_sparkify_event_data.json ../classifier ```
 3. From the app folder run `run.py`:
-``` $ cd ../app
-    $ python run.py 
-```
+``` $ cd ../app```
+```$ python run.py ```
 4. Open the app [http://0.0.0.0:3001/](http://0.0.0.0:3001/) in a web browser.
 
 ## Conclusions & Results Summary:
