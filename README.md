@@ -1,6 +1,6 @@
-# Churn_Classification_App
+# Churn Classification App:
 
-###Project Overview*
+## Project Overview*
 Predicting churn rates is a common and potentially difficult problem that many data scientists face across many customer-facing industries. It is necessary for businesses to identify those customer segments or even individuals that are likely to churn both for efforts to win those customers back to the service and so as to inform future marketing programs in finding quality customers. 
 
 To this end, this project examines a large customer data set using Spark backed machine learning to model and predict customer churn. The resulting model was has been placed into a web application and full write-up of the finding can be found here.
@@ -20,7 +20,7 @@ This project is based on the `medium` sized version of the versions of the Spark
 The included features:
 
 
-*Web Application*
+### Web Application*
 * Flask back-end,
 * Bootstrap controls of front-end. The web application consists of the following parts:
 * Python script [build_model.py]() which builds the machine learning model. This script accepts the path to the dataset and the path where the resulting model should be saved as parameters.
