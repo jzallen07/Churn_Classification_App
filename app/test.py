@@ -2,10 +2,7 @@ import os
 import sys
 
 # Path for spark source folder
-os.environ['SPARK_HOME']="/Users/zack.allen/.pyenv/versions/3.6.5/envs/venv/lib/python3.6/site-packages/pyspark"
-
-# Append pyspark  to Python Path
-#sys.path.append("/Users/zack.allen/.pyenv/versions/3.6.5/envs/venv/lib/python3.6/site-packages/pyspark")
+os.environ['SPARK_HOME']=""
 
 try:
     from pyspark import SparkContext
@@ -18,4 +15,4 @@ except ImportError as e:
 
 
 
-    # export SPARK_HOME="/Users/zack.allen/.pyenv/versions/3.6.5/envs/venv/lib/python3.6/site-packages/pyspark"
+    # export SPARK_HOME=""
