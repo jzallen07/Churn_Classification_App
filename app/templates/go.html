@@ -1,0 +1,29 @@
+{% extends "master.html" %}
+{% block title %}Results{% endblock %}
+
+{% block message %}
+    {% if result == 0 %}
+        <div class="alert alert-success ml-5 col-10" role="alert">
+            <h4 class="alert-heading">Rest Easy!</h4>
+            <p>The customer is not going to churn.</p>
+            <hr>
+            <p class="mb-0">The model estimates that this user is not likely to churn.</p>
+        </div>
+    {% else %}
+        {% if result == 1 %}
+            <div class="alert alert-danger ml-5 col-10" role="alert">
+                <h4 class="alert-heading">Alert!</h4>
+                <p>The customer is likely to churn.</p>
+                <hr>
+                <p class="mb-0">The model has flagged this use as a churn risk and action should be taken!</p>
+            </div>
+        {% else %}
+            <div class="alert alert-warning ml-5 col-10" role="alert">
+                <h4 class="alert-heading">Something went wrong.</h4>
+                <p>The model wasn't able to estimate churn risk on this user.</p>
+                <hr>
+                <p class="mb-0">There is insufficient information for the model to be able to give any recommendation on this user.</p>
+            </div>
+        {% endif %}
+    {% endif %}
+{% endblock %}
