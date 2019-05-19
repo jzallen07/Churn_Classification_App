@@ -19,6 +19,27 @@ This project is based on the `medium` sized version of the versions of the Spark
 
 ### The included features:
 
+|#| Column | Type | Description |
+| --- | --- | --- | --- |
+| 1 | userId | string | Unique user identifier |
+| 2 | artist | string | Name of the artist |
+| 3 | auth | string | “Logged-in” or “Cancelled” |
+| 4 | firstName | string | First name of the user |
+| 5 | gender | string | User Gender, “F” or “M” |
+| 6 | itemInSession | bigint | Item in session |
+| 7 | lastName | string | Last name of the user |
+| 8 | length | double | Length of the song related to the event |
+| 9 | level | string | Level of the user’s subscription, “free” or “paid”. User can change the level, so events for the same user can have different levels |
+| 10 | location | string | Location of the user at the time of the event |
+| 11 | method | string | “GET” or “PUT” |
+| 12 | page | string | Type of action: “NextSong”, “Login”, “Thumbs Up” etc. |
+| 13 | registration | bigint |  |
+| 14 | sessionId | bigint | |
+| 15 | song | string | Name of the song related to the event |
+| 16 | status | bigint | Response status: 200, 404, 307 |
+| 17 | ts | bigint | Event Timestamp |
+| 18 | userAgent | string | System which the user was interacting with the platformt through |
+
 
 ### Web Application:
 * Flask back-end
@@ -34,11 +55,12 @@ This project is based on the `medium` sized version of the versions of the Spark
 To run the web application follow steps:
 1. Ensure required libraries are installed (see below)
 2. Run `build_model.py`
-$ python create_model.py ../mini_sparkify_event_data.json ../classifier
+```$ python create_model.py ../mini_sparkify_event_data.json ../classifier ```
 3. From the app folder run `run.py`:
-$ cd ../app
-$ python run.py
-4. Open the app [http://0.0.0.0:3001/](http://0.0.0.0:3001/) in browser.
+``` $ cd ../app
+    $ python run.py 
+```
+4. Open the app [http://0.0.0.0:3001/](http://0.0.0.0:3001/) in a web browser.
 
 ## Conclusions & Results Summary:
 Did we achieve the goal of increasing customer retention. Maybe, maybe not. A tool such as this one could certainly be of use across many industries, but in and of itself it will not even come close to solving the problem. Models like this one are but part of the equation. They are very powerful and informative tools but, at present, that is all they are. They will not be proactively solving complex issues such as this one on their own just yet. If a model such as this one shows a customer is likely to churn the remainder of the work lies with people and or other tool systems to reach out to that customer.
